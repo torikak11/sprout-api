@@ -2,6 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const connectDB = require("./db/connect");
+const mongoose = require("mongoose");
 
 const PORT = 3000;
 
