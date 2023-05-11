@@ -3,8 +3,9 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const connectDB = require("./db/connect");
-const mongoose = require("mongoose");
 const plants = require("./routes/plants");
+const goals = require("./routes/goals");
+const habits = require("./routes/habits");
 
 const PORT = 3000;
 
@@ -12,11 +13,13 @@ const PORT = 3000;
 app.use(bodyParser.json());
 
 //routes
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   res.send("<h2>Sprout Server</h2>");
 });
 
-app.use('/plants', plants);
+app.use("/plants", plants);
+app.use("/goals", goals);
+app.use("/habits", habits);
 
 const start = async () => {
   try {
