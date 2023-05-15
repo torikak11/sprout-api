@@ -10,9 +10,4 @@ const getPlant = async (req, res) => {
   res.status(201).json({ plant });
 };
 
-const createPlant = async (req, res) => {
-  const plant = await Plant.create(req.body);
-  res.status(201).json({ plant });
-};
-
-module.exports = { getAllPlants, getPlant, createPlant };
+module.exports = { getAllPlants, getPlant };
