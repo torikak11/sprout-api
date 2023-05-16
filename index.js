@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const plants = require("./routes/plants");
 const goals = require("./routes/goals");
 const habits = require("./routes/habits");
+const auth = require("./routes/auth");
 
 const notFound = require("./middleware/not-found");
 const errorHandler = require("./middleware/error-handler");
@@ -22,6 +23,7 @@ app.get("/", (req, res) => {
 app.use("/plants", plants);
 app.use("/goals", goals);
 app.use("/habits", habits);
+app.use("/auth", auth);
 
 app.use(notFound);
 app.use(errorHandler);

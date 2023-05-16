@@ -1,5 +1,5 @@
 const Goal = require("../models/Goal");
-const CustomAPIError = require("../errors/custom-error");
+const { BadRequestError, NotFoundError } = require("../errors");
 
 const getAllGoals = async (req, res) => {
   const goals = await Goal.find();
@@ -9,7 +9,7 @@ const getAllGoals = async (req, res) => {
 const getGoal = async (req, res) => {
   const goal = await Goal.findOne({ _id: req.params.goalId });
   if (!goal) {
-    throw new CustomAPIError("Goal not found", 404);
+    throw new NotFoundError("Goal not found");
   }
   res.status(200).send({ status: "SUCCESS", data: goal });
 };

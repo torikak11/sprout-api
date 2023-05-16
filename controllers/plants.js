@@ -1,5 +1,6 @@
 const Plant = require("../models/Plant");
 const CustomAPIError = require("../errors/custom-error");
+const { NotFoundError } = require("../errors");
 
 const getAllPlants = async (req, res) => {
   const plants = await Plant.find();
@@ -9,7 +10,7 @@ const getAllPlants = async (req, res) => {
 const getPlant = async (req, res) => {
   const plant = await Plant.findOne({ _id: req.params.plantId });
   if (!plant) {
-    throw new CustomAPIError("Plant not found", 404);
+    throw new NotFoundError("Plant not found");
   }
   res.status(201).json({ plant });
 };

@@ -8,7 +8,7 @@ const goalSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    trim: true
+    trim: true,
   },
   steps: {
     type: [
@@ -20,7 +20,7 @@ const goalSchema = new mongoose.Schema({
         name: {
           type: String,
           required: true,
-          trim: true
+          trim: true,
         },
         complete: {
           type: Boolean,

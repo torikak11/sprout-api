@@ -1,5 +1,5 @@
 const Habit = require("../models/Habit");
-const CustomAPIError = require("../errors/custom-error");
+const { NotFoundError } = require("../errors");
 
 const getAllHabits = async (req, res) => {
   const habits = await Habit.find();
@@ -9,7 +9,7 @@ const getAllHabits = async (req, res) => {
 const getHabit = async (req, res) => {
   const habit = await Habit.findOne({ _id: req.params.habitId });
   if (!habit) {
-    throw new CustomAPIError("Habit not found", 404);
+    throw new NotFoundError("Habit not found");
   }
   res.status(200).send({ status: "SUCCESS", data: habit });
 };
