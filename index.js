@@ -9,10 +9,10 @@ const goals = require("./routes/goals");
 const habits = require("./routes/habits");
 const auth = require("./routes/auth");
 
+// middleware
+const authenticationHandler = require("./middleware/authentication");
 const notFound = require("./middleware/not-found");
 const errorHandler = require("./middleware/error-handler");
-
-// middleware
 app.use(bodyParser.json());
 
 // routes
@@ -20,10 +20,10 @@ app.get("/", (req, res) => {
   res.send("<h2>Sprout API</h2>");
 });
 
-app.use("/plants", plants);
-app.use("/goals", goals);
-app.use("/habits", habits);
-app.use("/auth", auth);
+app.use("/api/v1/plants", plants);
+app.use("/api/v1/goals", authenticationHandler, goals);
+app.use("/api/v1/habits", habits);
+app.use("/api/v1/auth", auth);
 
 app.use(notFound);
 app.use(errorHandler);
