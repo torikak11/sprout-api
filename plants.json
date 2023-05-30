@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Tulip",
+    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png",
+    "images": {
+      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/small-plant.png",
+      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/medium-plant.png",
+      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png"
+    }
+  },
+  {
+    "name": "Sunflower",
+    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png",
+    "images": {
+      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/small-plant.png",
+      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/medium-plant.png",
+      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png"
+    }
+  },
+  {
+    "name": "Rose",
+    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png",
+    "images": {
+      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/small-plant.png",
+      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/medium-plant.png",
+      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png"
+    }
+  },
+  {
+    "name": "Daisy",
+    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png",
+    "images": {
+      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/small-plant.png",
+      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/medium-plant.png",
+      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png"
+    }
+  }
+]
