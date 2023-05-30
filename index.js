@@ -6,13 +6,13 @@ const connectDB = require("./db/connect");
 const plants = require("./routes/plants");
 const goals = require("./routes/goals");
 const habits = require("./routes/habits");
+const notFound = require("./middleware/not-found");
 
 const PORT = 3000;
 
-//middleware
 app.use(bodyParser.json());
+app.use(notFound);
 
-//routes
 app.get("/", (req, res) => {
   res.send("<h2>Sprout Server</h2>");
 });
