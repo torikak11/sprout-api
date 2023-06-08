@@ -1,38 +1,38 @@
 [
   {
     "name": "Tulip",
-    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png",
+    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/tulip/tulip.png",
     "images": {
-      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/small-plant.png",
-      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/medium-plant.png",
-      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png"
+      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/tulip/tulip-sprout.png",
+      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/tulip/tulip-bud.png",
+      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/tulip/tulip-bloom.png"
     }
   },
   {
     "name": "Sunflower",
-    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png",
+    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/sunflower/sunflower.png",
     "images": {
-      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/small-plant.png",
-      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/medium-plant.png",
-      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png"
+      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/sunflower/sunflower-sprout.png",
+      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/sunflower/sunflower-bud.png",
+      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/sunflower/sunflower-bloom.png"
     }
   },
   {
     "name": "Rose",
-    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png",
+    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/rose/rose.png",
     "images": {
-      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/small-plant.png",
-      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/medium-plant.png",
-      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png"
+      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/rose/rose-sprout.png",
+      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/rose/rose-bud.png",
+      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/rose/rose-bloom.png"
     }
   },
   {
     "name": "Daisy",
-    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png",
+    "image": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/daisy/daisy.png",
     "images": {
-      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/small-plant.png",
-      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/medium-plant.png",
-      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/large-plant.png"
+      "small": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/daisy/daisy-sprout.png",
+      "medium": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/daisy/daisy-bud.png",
+      "large": "https://toriadev-sprout.s3.us-west-2.amazonaws.com/flowers/daisy/daisy-bloom.png"
     }
   }
 ]

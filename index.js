@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 require("express-async-errors");
+const cors = require("cors");
 const app = express();
 const bodyParser = require("body-parser");
 
@@ -8,14 +9,14 @@ const plants = require("./routes/plants");
 const goals = require("./routes/goals");
 const habits = require("./routes/habits");
 const auth = require("./routes/auth");
-const notFound = require("./middleware/not-found");
+
 
 // middleware
 const authenticationHandler = require("./middleware/authentication");
 const notFound = require("./middleware/not-found");
 const errorHandler = require("./middleware/error-handler");
+app.use(cors());
 app.use(bodyParser.json());
-app.use(notFound);
 
 // routes
 app.get("/", (req, res) => {
@@ -26,6 +27,7 @@ app.use("/api/v1/plants", plants);
 app.use("/api/v1/goals", authenticationHandler, goals);
 app.use("/api/v1/habits", habits);
 app.use("/api/v1/auth", auth);
+
 
 app.use(notFound);
 app.use(errorHandler);
