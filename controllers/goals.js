@@ -3,7 +3,9 @@ const { StatusCodes } = require("http-status-codes");
 const { BadRequestError, NotFoundError } = require("../errors");
 
 const getAllGoals = async (req, res) => {
-  const goals = await Goal.find({ user: req.user.userId }).sort("createdAt");
+  const goals = await Goal.find({ user: req.user.userId })
+    .populate("plant")
+    .sort("createdAt");
   res.status(StatusCodes.OK).send({ goals });
 };
 
@@ -12,7 +14,9 @@ const getGoal = async (req, res) => {
     user: { userId },
     params: { goalId },
   } = req;
-  const goal = await Goal.findOne({ _id: goalId, user: userId });
+  const goal = await Goal.findOne({ _id: goalId, user: userId }).populate(
+    "plant"
+  );
   if (!goal) {
     throw new NotFoundError("Goal not found");
   }

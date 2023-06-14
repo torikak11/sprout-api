@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/plants", plants);
 app.use("/api/v1/goals", authenticationHandler, goals);
-app.use("/api/v1/habits", habits);
+app.use("/api/v1/habits", authenticationHandler, habits);
 app.use("/api/v1/auth", auth);
 
 

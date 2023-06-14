@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
       message: "Please provide a valid email",
     },
     unique: [true, "Email already in use"],
+    lowercase: true,
   },
   password: {
     type: String,

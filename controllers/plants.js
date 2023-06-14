@@ -4,7 +4,7 @@ const { NotFoundError } = require("../errors");
 
 const getAllPlants = async (req, res) => {
   const plants = await Plant.find();
-  res.status(201).json({ plants });
+  res.status(200).json({ plants });
 };
 
 const getPlant = async (req, res) => {
@@ -12,7 +12,7 @@ const getPlant = async (req, res) => {
   if (!plant) {
     throw new NotFoundError("Plant not found");
   }
-  res.status(201).json({ plant });
+  res.status(200).json({ plant });
 };
 
 module.exports = { getAllPlants, getPlant };

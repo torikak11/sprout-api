@@ -3,7 +3,13 @@ const User = require("../models/User");
 const { StatusCodes } = require("http-status-codes");
 
 const register = async (req, res) => {
-  const user = await User.create({ ...req.body });
+  const { name, email, password } = req.body;
+  if (!email || !password || !name) {
+    throw new BadRequestError(
+      "Please enter an name, email, and password of at least 6 characters"
+    );
+  }
+  const user = await User.create({ name, email, password });
   const token = user.getToken();
   res.status(StatusCodes.CREATED).json({ user: { name: user.name }, token });
 };
