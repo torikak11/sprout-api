@@ -9,6 +9,7 @@ const plants = require("./routes/plants");
 const goals = require("./routes/goals");
 const habits = require("./routes/habits");
 const auth = require("./routes/auth");
+const users = require("./routes/users");
 
 
 // middleware
@@ -26,6 +27,7 @@ app.get("/", (req, res) => {
 app.use("/api/v1/plants", plants);
 app.use("/api/v1/goals", authenticationHandler, goals);
 app.use("/api/v1/habits", authenticationHandler, habits);
+app.use("/api/v1/users", authenticationHandler, users)
 app.use("/api/v1/auth", auth);
 
 
