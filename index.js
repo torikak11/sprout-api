@@ -16,7 +16,6 @@ const users = require("./routes/users");
 const authenticationHandler = require("./middleware/authentication");
 const notFound = require("./middleware/not-found");
 const errorHandler = require("./middleware/error-handler");
-app.use(cors());
 app.use(bodyParser.json());
 
 // routes
