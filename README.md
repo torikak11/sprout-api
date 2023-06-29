@@ -1,7 +1,6 @@
 # Sprout API
 ## Table of Contents
   - [Technologies](##Technologies)
-  - [Description](##Description)
   - [Approach](##Approach)
   - [Future Updates](##Future)
   - [Credits](##Credits)
